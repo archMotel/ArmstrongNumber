@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int power;
         System.out.println("Enter a number to determine whether or not the number is an armstrong number.");
         if(in.hasNextInt()) {
             String number = in.next();

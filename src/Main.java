@@ -19,16 +19,25 @@ public class Main {
                 int cur = 0;
                 int sol;
 
-                for (int j : numbers) {
-                    sol = (int) Math.pow(j, numbers.length);
+                for (int i = 0; i < numbers.length; i++) {
+                    sol = (int) Math.pow(numbers[i], numbers.length);
                     cur += sol;
                     // 3**3 + 7**3 + 1**3 = 371
                     // 9^4 + 7^4 + 9^4 + 4^4 = 9474
+                    System.out.print(numbers[i] + "^" + numbers.length);
+                    if (i != numbers.length - 1) {
+                        System.out.print( " + ");
+                    }
+                    if (i == numbers.length - 1) {
+                        System.out.print(" = " + cur);
+                    }
                 }
+
+                System.out.println();
 
                 if (cur == userInput) {
                     System.out.println("This number is an armstrong number.");
-                    System.out.println(userInput + " = " + cur);
+                    System.out.println(cur + " = " + userInput);
                     System.out.println("Would you like to check another number? y/n");
                     cont = tryAgain(in);
                 } else {

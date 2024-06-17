@@ -19,8 +19,8 @@ public class Main {
                 int cur = 0;
                 int sol;
 
-                for (int i = 0; i < numbers.length; i++) {
-                    sol = (int) Math.pow(numbers[i], numbers.length);
+                for (int j : numbers) {
+                    sol = (int) Math.pow(j, numbers.length);
                     cur += sol;
                     // 3**3 + 7**3 + 1**3 = 371
                     // 9^4 + 7^4 + 9^4 + 4^4 = 9474

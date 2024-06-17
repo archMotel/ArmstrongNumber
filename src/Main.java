@@ -43,12 +43,11 @@ public class Main {
                     System.out.println(userInput + " != " + cur);
                 }
                 System.out.println("Would you like to check another number? y/n");
-                cont = tryAgain(in);
             } else {
                 System.err.println("The entered value is not valid");
                 System.out.println("Would you like to try again? y/n");
-                cont = tryAgain(in);
             }
+            cont = tryAgain(in);
         }
     }
     public static boolean tryAgain(Scanner in){

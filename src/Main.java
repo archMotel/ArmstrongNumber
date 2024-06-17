@@ -25,6 +25,7 @@ public class Main {
                     // 3**3 + 7**3 + 1**3 = 371
                     // 9^4 + 7^4 + 9^4 + 4^4 = 9474
                 }
+
                 if (cur == userInput) {
                     System.out.println("This number is an armstrong number.");
                     System.out.println(userInput + " = " + cur);

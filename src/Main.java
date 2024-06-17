@@ -38,14 +38,12 @@ public class Main {
                 if (cur == userInput) {
                     System.out.println("This number is an armstrong number.");
                     System.out.println(cur + " = " + userInput);
-                    System.out.println("Would you like to check another number? y/n");
-                    cont = tryAgain(in);
                 } else {
                     System.out.println("This number is not an armstrong number.");
                     System.out.println(userInput + " != " + cur);
-                    System.out.println("Would you like to check another number? y/n");
-                    cont = tryAgain(in);
                 }
+                System.out.println("Would you like to check another number? y/n");
+                cont = tryAgain(in);
             } else {
                 System.err.println("The entered value is not valid");
                 System.out.println("Would you like to try again? y/n");

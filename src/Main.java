@@ -16,7 +16,6 @@ public class Main {
             }
 
             int cur = 0;
-            int cumSum = 0;
             int sol;
 
             for(int i = 0; i < numbers.length; i++) {
